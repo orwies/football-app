@@ -1,0 +1,48 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Output directories
+dist/
+build/
+.cache/
+.out/
+coverage/
+.tmp/
+
+# Logs
+*.log
+logs
+*.pid
+*.seed
+*.pid.lock
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE / Editor
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Client specific (React/Vite)
+football-app-client/.vite/
+football-app-client/.next/
+football-app-client/.nuxt/
+football-app-client/.expo/
+football-app-client/build/
+football-app-client/dist/
+
+# Server specific (NestJS)
+football-app-server/dist/
+football-app-server/.typeorm-cache/
+
+# Optional: OS generated
+ehthumbs.db
+Icon?
