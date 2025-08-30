@@ -10,3 +10,4 @@ export type FilterHighlightsDto = {
     startDate?: string;
     endDate?: string;
 };
+

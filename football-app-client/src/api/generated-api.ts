@@ -1,4 +1,4 @@
-import { baseApi as api } from "C:\\Users\\User\\coding_or\\code\\football-app\\football-app-client\\src\\api\\base-api";
+import { baseApi as api } from "./base-api";
 const injectedRtkApi = api.injectEndpoints({
   endpoints: (build) => ({
     highlightsControllerGetHighlights: build.query<
@@ -36,7 +36,7 @@ const injectedRtkApi = api.injectEndpoints({
   }),
   overrideExisting: false,
 });
-export { injectedRtkApi as enhancedApi };
+export { injectedRtkApi as generatedApi };
 export type HighlightsControllerGetHighlightsApiResponse =
   /** status 200 List of highlights */ HighlightDto[];
 export type HighlightsControllerGetHighlightsApiArg = {

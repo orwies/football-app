@@ -7,6 +7,12 @@ import { InMemoryHighlightsStorageService } from './storage/in-memory-highlights
 @Module({
   imports: [],
   controllers: [HighlightsController],
-  providers: [HighlightsService, { provide: HighlightsStorageService, useClass: InMemoryHighlightsStorageService }],
+  providers: [
+    HighlightsService,
+    {
+      provide: HighlightsStorageService,
+      useClass: InMemoryHighlightsStorageService,
+    },
+  ],
 })
-export class HighlightsModule { }
+export class HighlightsModule {}

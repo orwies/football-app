@@ -6,6 +6,7 @@ import { FilterHighlightsDto } from './highlights/models/filter-highlights.dto';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors();
   app.useGlobalPipes(
     new ValidationPipe({
       transform: true,
@@ -17,7 +18,9 @@ async function bootstrap() {
     .setVersion('1.0')
     .build();
 
-  const document = SwaggerModule.createDocument(app, config, { extraModels: [FilterHighlightsDto] });
+  const document = SwaggerModule.createDocument(app, config, {
+    extraModels: [FilterHighlightsDto],
+  });
   SwaggerModule.setup('swagger', app, document);
 
   await app.listen(process.env.PORT ?? 8080);
