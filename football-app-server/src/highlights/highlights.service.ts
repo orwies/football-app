@@ -15,7 +15,6 @@ export class HighlightsService {
 
   public getHighlights(filter: FilterHighlightsDto): HighlightDto[] {
     const highlights = this.highlightsStorage.getHighlights();
-    console.log(highlights);
     if (Object.values(filter).every((value) => value === undefined)) {
       return highlights;
     }

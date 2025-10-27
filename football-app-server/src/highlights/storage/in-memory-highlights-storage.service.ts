@@ -10,32 +10,8 @@ export class InMemoryHighlightsStorageService
   private readonly highlights: HighlightDto[];
 
   constructor() {
-    // this.highlights = [
-    //   {
-    //     url: 'https://example.com/video1.mp4',
-    //     homeTeam: 'Liverpool',
-    //     awayTeam: 'Manchester City',
-    //     competition: 'Premier League',
-    //     matchDate: new Date(2025, 8, 15),
-    //     id: '2',
-    //     uploadDate: new Date(2025, 8, 16),
-    //     likes: 950,
-    //     thumbnailUrl: 'kdb.jpg',
-    //   },
-    //   {
-    //     url: 'https://example.com/video2.mp4',
-    //     homeTeam: 'Arsenal',
-    //     awayTeam: 'Tottenham',
-    //     competition: 'Premier League',
-    //     matchDate: new Date(2025, 8, 12),
-    //     id: '3',
-    //     uploadDate: new Date(2025, 8, 13),
-    //     likes: 750,
-    //     thumbnailUrl: 'kdb.jpg',
-    //   },
-    // ];
-    this.highlights = Array.from({ length: 500 }, () => ({
-      url: 'https://example.com/video2.mp4',
+    this.highlights = Array.from({ length: 25 }, () => ({
+      url: 'http://localhost:9000/highlights/HIGHLIGHTS!%20Arsenal%201-1%20Man%20City%20_%20Haaland%20%26%20Martinelli%20Goals%20_%20Premier%20League%20(1).mp4',
       homeTeam: 'Arsenal',
       awayTeam: 'Tottenham',
       competition: 'Premier League',
