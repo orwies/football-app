@@ -18,7 +18,7 @@ export const VideoModal: FC<VideoModalProps> = ({
     <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth>
       <DialogContent sx={{ p: 0 }}>
         <video
-          src={videoUrl}
+          src={`http://localhost:8080/videos/${videoUrl}`}
           controls
           autoPlay
           style={{ width: "100%", height: "auto", borderRadius: 8 }}

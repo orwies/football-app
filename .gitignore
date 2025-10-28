@@ -46,3 +46,7 @@ football-app-server/.typeorm-cache/
 # Optional: OS generated
 ehthumbs.db
 Icon?
+
+# Storage
+videos/
+thumbnails/

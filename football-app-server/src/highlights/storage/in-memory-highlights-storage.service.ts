@@ -11,7 +11,7 @@ export class InMemoryHighlightsStorageService
 
   constructor() {
     this.highlights = Array.from({ length: 25 }, () => ({
-      url: 'http://localhost:9000/highlights/HIGHLIGHTS!%20Arsenal%201-1%20Man%20City%20_%20Haaland%20%26%20Martinelli%20Goals%20_%20Premier%20League%20(1).mp4',
+      url: 'highlight1.mp4',
       homeTeam: 'Arsenal',
       awayTeam: 'Tottenham',
       competition: 'Premier League',

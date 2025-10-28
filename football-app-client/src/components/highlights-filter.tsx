@@ -20,7 +20,6 @@ export const HighlightsFilter = () => {
 
   return (
     <Box width={250} pr={3}>
-      {/* Search by Team */}
       <TextField
         label="Team"
         variant="outlined"
@@ -30,7 +29,6 @@ export const HighlightsFilter = () => {
         onChange={(e) => handleChange("team", e.target.value)}
       />
 
-      {/* Competition */}
       <FormControl fullWidth margin="normal">
         <InputLabel>Competition</InputLabel>
         <Select
@@ -44,7 +42,6 @@ export const HighlightsFilter = () => {
         </Select>
       </FormControl>
 
-      {/* Home Team */}
       <TextField
         label="Home Team"
         fullWidth
@@ -53,7 +50,6 @@ export const HighlightsFilter = () => {
         onChange={(e) => handleChange("homeTeam", e.target.value)}
       />
 
-      {/* Away Team */}
       <TextField
         label="Away Team"
         fullWidth
@@ -62,7 +58,6 @@ export const HighlightsFilter = () => {
         onChange={(e) => handleChange("awayTeam", e.target.value)}
       />
 
-      {/* Date Range */}
       <TextField
         type="date"
         label="Start Date"
@@ -83,7 +78,6 @@ export const HighlightsFilter = () => {
         onChange={(e) => handleChange("endDate", e.target.value)}
       />
 
-      {/* Clear Button */}
       <Button
         variant="outlined"
         color="secondary"

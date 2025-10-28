@@ -31,7 +31,7 @@ export const HighlightThumbnail: FC<HighlightThumbnailProps> = ({
         <CardMedia
           component="img"
           height="250"
-          image={thumbnailUrl}
+          image={`http://localhost:8080/thumbnails/${thumbnailUrl}`}
           alt={`${homeTeam} vs ${awayTeam}`}
         />
         <Box
@@ -52,6 +52,7 @@ export const HighlightThumbnail: FC<HighlightThumbnailProps> = ({
       <CardContent sx={{ padding: "8px !important" }}>
         <Typography
           variant="subtitle1"
+          color="textPrimary"
           sx={{
             fontWeight: 500,
             overflow: "hidden",
