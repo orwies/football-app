@@ -29,17 +29,15 @@ export class HighlightsService {
 
           switch (key) {
             case 'team': {
-              const team = (
-                value as FilterHighlightsDto['team']
-              )?.toLowerCase();
+              const teamValue = (value as string).toLowerCase();
               if (
-                homeTeam.toLowerCase() !== team &&
-                awayTeam.toLowerCase() !== team
+                !homeTeam.toLowerCase().includes(teamValue) &&
+                !awayTeam.toLowerCase().includes(teamValue)
               ) {
-                return false;
+                  return false;
               }
               break;
-            }
+              }
 
             case 'competition':
               if (
@@ -49,6 +47,23 @@ export class HighlightsService {
                 return false;
               }
               break;
+
+            case 'homeTeam': {
+              const ht = (value as string).toLowerCase();
+              if (!homeTeam.toLowerCase().includes(ht)) {
+                  return false;
+              }
+              break;
+            }
+
+            case 'awayTeam': {
+              const at = (value as string).toLowerCase();
+              if (!awayTeam.toLowerCase().includes(at)) {
+                  return false;
+              }
+              break;
+            }
+
 
             case 'startDate': {
               const startDate = value as FilterHighlightsDto['startDate'];

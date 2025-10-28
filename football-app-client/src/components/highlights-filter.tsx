@@ -36,9 +36,9 @@ export const HighlightsFilter = () => {
           onChange={(e) => handleChange("competition", e.target.value)}
         >
           <MenuItem value="">All</MenuItem>
-          <MenuItem value="premier-league">Premier League</MenuItem>
-          <MenuItem value="la-liga">La Liga</MenuItem>
-          <MenuItem value="ucl">Champions League</MenuItem>
+          <MenuItem value="Premier League">Premier League</MenuItem>
+          <MenuItem value="La Liga">La Liga</MenuItem>
+          <MenuItem value="Champions League">Champions League</MenuItem>
         </Select>
       </FormControl>
 
